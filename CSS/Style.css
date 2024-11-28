@@ -203,3 +203,48 @@
     background-color: var(--primary-bg-color);
     
 }
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 2rem 0;
+    font-family: var(--secondary-title-fonts);
+    color: var(--primary-fonts-color);
+    width: 90%;
+    margin: auto;
+}
+.news-letter {
+    display: flex;
+    flex-direction: column;
+
+    
+.input-email {
+    display: flex;
+    flex-direction: row;
+
+    .news-email {
+        padding: 0.5rem;
+        width: 272px;
+        position: absolute;
+        
+    }
+    .fa-solid.fa-paper-plane {
+        position: relative;
+        width: 35px;
+        height: 35px;
+}
+}
+.footer-about-hotel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        color: var(--primary-fonts-color);
+        font-weight: 500;
+    }
+}
+}
