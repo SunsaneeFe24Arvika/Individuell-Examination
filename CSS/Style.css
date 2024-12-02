@@ -16,7 +16,7 @@
     --secondary-fonts-color: #FFFFFF;
     --primary-bg-color: #F1F0E8;
     --primary-text-box-color: #E3F6F5;
-    --primary-hover-color: #89A8B2;
+    --primary-hover-color: #568494;
 
 
     --heading-font-size: 36px;
@@ -25,7 +25,7 @@
 
 
     --bg-gradient: linear-gradient(to top,#E5E1DA,#fffffd, #E5E1DA);
-
+    --main-box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
 }
 * {
     box-sizing: border-box;
@@ -45,14 +45,14 @@ body {
 
     
 }
-.menu__navigation-list {
+.page-heading {
     background-image: var(--bg-gradient);
     display: flex;
     justify-content: space-between;
     padding: 3rem 5rem;
 
    
-    ul {
+    .navigation-bar {
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -67,12 +67,10 @@ body {
         padding: 1rem 1.5rem;
     }
 
-   ul a:hover {
+   .navigation-bar a:hover {
         background-color: var(--hover-button-brown);
         color: var(--primary-fonts-color);
-        
-        
-        
+         
     }
 
     a img {
@@ -83,15 +81,15 @@ body {
     }
    
 /*SEARCH SECTION*/
-.search-container__box {
-    background-image: url(../assets/images/living\ room\ beside\ mountain.png);
+.content-container {
+    background-image: url(../assets/images/living-roombeside-mountain.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
-    margin: auto;
     
-.search-box__form {
+    
+.content-container__search__form {
     background-color: var(--primary-bg-color);
     display: flex;
     justify-content: center;
@@ -135,37 +133,40 @@ body {
 
 /*OFFERS SECTION*/
 
-.offers-container__box {
+.offers-container {
     display: flex;
     flex-direction: column;
     padding: 0 5rem;
     align-items: center;
-    margin: auto;
-    
 }
-.offers__heading {
-    padding: 2rem;
-    margin-top: 2rem;
-
-    h1 {
+.offers-container__flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    h2 {
+        margin-top: 2rem;
         font-family: var(--primary-heading-fonts);
         font-size: var(--heading-font-size);
-        font-weight: 700;
+        font-weight: 100;
         color: var(--primary-fonts-color);
         text-align: center;
+        letter-spacing: 5px;
     }
     h3 {
         font-family: var(--secondary-title-fonts);
         font-size: var(--sub-heading-font-size);
-        font-weight: 500;
+        font-weight: 200;
         font-style: italic;
         color: var(--primary-fonts-color);
+        margin-bottom: 2rem;
     }
+
 }
 .offers-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
     
 
     img{
@@ -176,7 +177,8 @@ body {
     }
     h3 {
         font-family: var(--primary-heading-fonts);
-        font-size: var(--sub-heading-font-size);
+        font-size: 18px;
+        letter-spacing: 2px;
         margin: 0.5rem 0;
         text-align: left;
         padding: 10px;
@@ -184,11 +186,11 @@ body {
     }
     p {
         font-family: var(--secondary-title-fonts);
-        font-size: 1rem;
+        font-size: 18px;
+        width: 100%;
         height: 150px;
         text-align: left;
         overflow: hidden;
-        padding: 10px;
         color: var(--primary-fonts-color);
     }
 }
@@ -197,15 +199,16 @@ body {
     border: none;
     border-radius: 5px;
     font-style: italic;
-    color: var(--primary-fonts-color);
+    color: var(--primary-hover-color);
     font-family: var(--secondary-title-fonts);
     font-size: 16px;
-    font-weight: 500;
-    width: fit-content;
-    padding: 0.5rem 1rem;
+    font-weight: 700;
     cursor: pointer;
     background-color: var(--primary-bg-color);
     
+}
+.explore__submit-button:hover {
+    text-decoration: underline;
 }
 
 /*FOOTER*/
@@ -256,6 +259,7 @@ body {
         text-decoration: none;
         color: var(--primary-fonts-color);
         font-weight: 700;
+        font-size: 18px;
     }
     a:hover {
         text-decoration: underline;
@@ -324,16 +328,23 @@ body {
     justify-content: center;
     margin: 2rem;
     
-    .booking-btn__button, .offers-btn__link {
+    .booking-btn__button {
         margin-left: 3rem;
         padding: 0.5rem 1rem;
         border: none;
+        border-radius: 5px;
         font-family: var(--primary-heading-fonts);
-        color: var(--primary-fonts-color);
+        color: var(--secondary-fonts-color);
         background-color: var(--primary-hover-color);
         text-decoration: none;
         font-size: 18px;
         font-weight: 100;
+        box-shadow: var(--main-box-shadow);
+        cursor: pointer;
+    }
+    .booking-btn__button:hover {
+        background-color: var(--primary-text-box-color);
+        color: var(--primary-fonts-color);
     }
 }
 
@@ -348,6 +359,7 @@ body {
 
     .room-info__link-booking img {
         width: 570px;
+        aspect-ratio: 9 / 5;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -373,16 +385,15 @@ body {
     border: none;
     font-style: italic;
     background-color: #E5E1DA;
-    a {
-        text-decoration: none;
-        color: var(--primary-hover-color);
-        font-family: var(--primary-heading-fonts);
-        font-weight: 100;
-        padding: 0.5rem;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+    text-decoration: none;
+    color: var(--primary-hover-color);
+    font-family: var(--primary-heading-fonts);
+    font-weight: 100;
+    padding: 0.5rem;
+      
+}
+.more-images-btn__button-link:hover {
+    text-decoration: underline;
 }
 
 /*FACILITY SECTION*/
@@ -402,6 +413,7 @@ body {
         font-weight: 100;
         font-size: var(--sub-heading-font-size);
         color: var(--primary-fonts-color);
+        letter-spacing: 2px;
         }
     
 }
@@ -433,19 +445,19 @@ body {
 }
 .read-more-btn__button-link {
     border: none;
+    padding: 0.5rem 0;
+    text-decoration: none;
     color: var(--primary-hover-color);
     font-family: var(--primary-heading-fonts);
     font-weight: 100;
     font-style: italic;
-
-    a {
-        text-decoration: none;
-        
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
+    background-color: var(--primary-bg-color);
+   
 }
+.read-more-btn__button-link:hover {
+    text-decoration: underline;
+    
+}
+
 
 
