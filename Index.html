@@ -12,30 +12,30 @@
 <body>
     <!--WRAPPER-->
     <div class="page-wrapper">
-        <header class="page-heading">
+        <header class="heading">
             
                 <!--LOGO AND MENU-->
-            <figure class="page-heading__logo-image">
-                <a href="Index.html" class="web-logo__image">
+            <figure class="heading__logo">
+                <a href="Index.html" class="heading-logo__link">
                     <img src="assets/logo/bonz.ai-logo-black-landscape.png" alt="">
                 </a>
             </figure>
           
-            <nav class="navigation-bar">
-                <a href="" class="hotel">
-                    <h3>Hotelet</h3>
+            <nav class="menu">
+                <a href="" class="menu__link">
+                    <h3 class="heading__title-third">Hotelet</h3>
                 </a>
-                <a href="" class="hotel">
-                    <h3>Erbjuanden</h3>
+                <a href="" class="menu__link">
+                    <h3 class="heading__title-third">Erbjuanden</h3>
                 </a>
-                <a href="" class="hotel">
-                    <h3>Fest & Event</h3>
+                <a href="" class="menu__link">
+                    <h3 class="heading__title-third">Fest & Event</h3>
                 </a>
-                <a href="" class="hotel">
-                    <h3>Aktiviteter</h3>
+                <a href="" class="menu__link">
+                    <h3 class="heading__title-third">Aktiviteter</h3>
                 </a>
-                <a href="" class="hotel">
-                    <h3>Logga In</h3>
+                <a href="" class="menu__link">
+                    <h3 class="heading__title-third">Mina sidor</h3>
                 </a>
             </nav>
           
@@ -43,55 +43,58 @@
 
          <!--SEARCH CONTAINER-->
 
-        <main class="content-container">
-            <div class="content-container__search__form">
+        <main class="container">
+            <section class="container__form">
                 <form>
-                    <label class="search__room">Välj en rumstyp</label>
-                    <input type="text" class="search__destination-city" placeholder="Rumstyp">
+                    <label class="form__label">Välj en rumstyp</label>
+                    <input type="text" class="form__input" placeholder="Rumstyp">
 
-                    <label class="search__check-in">Check-In</label>
-                    <input type="date" class="check-in__date">
+                    <label class="form__label">Check-In</label>
+                    <input type="date" class="form__input">
 
-                    <label class="search__check-out">Check Out</label>
-                    <input type="date" class="check-out__date">
+                    <label class="form__label">Check Out</label>
+                    <input type="date" class="form__input">
 
-                    <label class="search-room__quantity">Gäster</label>
-                    <input type="number" class="room-guests__quantity" placeholder="1 rum, 2 gäster">
+                    <label class="form__label">Gäster</label>
+                    <input type="number" class="form__input" placeholder="1 rum, 2 gäster">
                 
-                    <button class="search-btn__submit-button">Sök</button>
+                    <button class="form-btn__submit-button form-btn__button--flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Sök
+                    </button>
                 </form>
-            </div>
+            </section>
         </main> 
             <!--OFFERS CONTAINER-->
-            <aside class="offers-container">
-                <section class="offers-container__flex">
+            <aside class="aside">
+                <section class="aside__flex">
                 
-                <h2 class="offers__heading__title">ETT ERBJUDANDE SOM DU INTE VILL MISSA!</h2>
-                <h3>Maximera din vistelse med de bästa möjliga erbjudandena på boende, mat och oförglömliga aktiviteter.</h3>
+                <h2 class="aside__heading__title heading__title-second">ETT ERBJUDANDE SOM DU INTE VILL MISSA!</h2>
+                <h3 class="aside__heading__title--italic heading__title-third">Maximera din vistelse med de bästa möjliga erbjudandena på boende, mat och oförglömliga aktiviteter.</h3>
                 
                 </section> 
 
-                <section class="offers-box">
-                <article class="offers__image__imformation">
+                <section class="offers__article__grid">
+                <article class="offers__image">
                     <img src="assets/images/christmas-market-1864241_1280.jpg" alt="Chrismas market">
-                    <h3 class="offers__sub-heading">UPPLEV JULMARKNAD PÅ STAN</h3>
-                    <p class="offers__information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="explore__submit-button">LÄS MER</button>
+                    <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
+                    <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
+                    <button class="read-more-btn__submit-button">LÄS MER</button>
                 </article>
             
         
-                <article class="offers__image__imformation">
+                <article class="offers__image">
                     <img src="assets/images/new-year-party.png" alt="New Year's party with dogs">
-                    <h3 class="offers__sub-heading">FIRA NYTT ÅR MED DE DU ÄLSKAR</h3>
-                    <p class="offers__information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="explore__submit-button">LÄS MER</button>
+                    <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
+                    <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
+                    <button class="read-more-btn__submit-button">LÄS MER</button>
                 </article>
             
-                <article class="offers__image__imformation">
+                <article class="offers__image">
                     <img src="assets/images/wedding.png" alt="A wedding couple">
-                    <h3 class="offers__sub-heading">GÖR DIN DAG EXTRA SPECIAL</h3>
-                    <p class="offers__information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="explore__submit-button">LÄS MER</button>
+                    <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
+                    <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
+                    <button class="read-more-btn__submit-button">LÄS MER</button>
                 </article>
                 </section>
             </aside>
@@ -99,29 +102,29 @@
 
         <footer class="grid-footer">
 
-            <section class="news-letter">
-                    <label class="news-letter__email">FÅ VÅRT NYHETSBREV!</label>
-                    <div class="input-email">
-                        <input type="text" class="news-email" placeholder="Din email...">
+            <section class="footer-news-letter__form">
+                    <label class="footer__label__email">FÅ VÅRT NYHETSBREV!</label>
+                    <div class="footer__input">
+                        <input type="text" class="footer__input--email" placeholder="Din email...">
                         <i class="fa-solid fa-paper-plane"></i>
                     </div>
             </section>
                 <section class="footer-adress">
-                    <h3>Bonz.ai hotell</h3>
-                    <p>Hundfjällsvägen</p>
-                    <p>780 67</p>
-                    <p>Sälen</p>
-                    <p>Sverige</p>
+                    <h3 class="footer-adress__title heading__title-third">Bonz.ai hotell</h3>
+                    <p class="article-text">Hundfjällsvägen</p>
+                    <p class="article-text">780 67</p>
+                    <p class="article-text">Sälen</p>
+                    <p class="article-text">Sverige</p>
                 </section>
-                <section class="footer-about-hotel">
-                    <a href="about-us" class="about-us__link">OM OSS</a>
-                    <a href="contact-us" class="sub-link__contact-us">Kontakta oss</a>
-                    <a href="find-us" class="sub-link__find-us">Hitta hit</a>
-                    <a href="jobs" class="sub-link__jobs">Lediga jobb</a>
-                    <a href="QandA" class="sub-link__questions">FAQ-Vanliga frågor</a>
+                <section class="footer__link-item">
+                    <a href="about-us" class="footer__link">OM OSS</a>
+                    <a href="contact-us" class="footer__link">Kontakta oss</a>
+                    <a href="find-us" class="footer__link">Hitta hit</a>
+                    <a href="jobs" class="footer__link">Lediga jobb</a>
+                    <a href="QandA" class="footer__link">FAQ-Vanliga frågor</a>
                     
                 </section>
-                <section class="footer-social__social-media__icon">
+                <section class="footer-social-media__icon">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-tiktok"></i>
