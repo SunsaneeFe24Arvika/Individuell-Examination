@@ -27,7 +27,7 @@
 
     /*BACKGROUND AND BOX SHADOW*/
     --bg-gradient: linear-gradient(to top,#E5E1DA,#fffffd, #E5E1DA);
-    --main-box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
+    --main-box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.3);
 }
 * {
     box-sizing: border-box;
@@ -37,17 +37,17 @@
 }
 
 body {
-    background-color: #F1F0E8;
+    background-color: #fff;
 }
 .page-wrapper {
-    width: 100vw;
+    min-width: 1000px;
 }
 .heading {
+    padding: 0 7rem;
     background-image: var(--bg-gradient);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 5rem;
 
     .menu {
         display: flex;
@@ -142,7 +142,7 @@ body {
 .heading__title-second {
     margin-top: 2rem;
     font-family: var(--primary-heading-fonts);
-    font-size: var(--heading-font-size);
+    font-size: var(--sub-heading-font-size);
     font-weight: 100;
     color: var(--primary-fonts-color);
     text-align: center;
@@ -173,18 +173,18 @@ body {
         margin-bottom: 2rem;
 
     }
-    .article-text {
-        font-family: var(--article-fonts);
-        font-size: var(--article-font-size);
-        width: 100%;
-        height: 150px;
-        text-align: left;
-        overflow: hidden;
-        color: var(--primary-fonts-color);
-    }
+}
+.article-text {
+    font-family: var(--article-fonts);
+    font-size: var(--article-font-size);
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: left;
+    overflow: hidden;
+    color: var(--primary-fonts-color);
 }
 
-.read-more-btn__submit-button {
+.info-btn__submit-btn {
     border: none;
     border-radius: 5px;
     font-style: italic;
@@ -192,11 +192,12 @@ body {
     font-family: var(--primary-button-fonts);
     font-size: 16px;
     font-weight: 700;
+    letter-spacing: 2px;
     cursor: pointer;
-    background-color: var(--primary-bg-color);
-    
+
 }
-.read-more-btn__submit-button:hover {
+
+.info-btn__submit-btn:hover {
     text-decoration: underline;
 }
 
@@ -206,12 +207,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
+    place-items: center;
     gap: 1rem;
-    padding: 5rem;
+    padding: 3rem 7rem;
     font-family: var(--secondary-title-fonts);
     color: var(--primary-fonts-color);
     background-image: var(--bg-gradient);
-    margin-top: 2rem;
+   
     
 }
 .footer-news-letter__form {
@@ -256,6 +258,9 @@ body {
 .footer-adress__title {
     margin: 0;
 }
+.footer-adress__text {
+    padding: 0;
+}
 .footer-social-media__icon {
     display: flex;
     flex-direction: row;
@@ -274,12 +279,12 @@ body {
 
 /*ABOUT HOTEL*/
 
-.room__image__information {
+.header__image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 3rem;
+    padding: 2rem 7rem;
 
     img {
         width: 60%;
@@ -290,37 +295,43 @@ body {
         padding: 1rem;
         border-radius: 10px;
         border: none;
-        box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25); 
+        box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
+        margin-bottom: 3rem; 
     }
-    h1 {
+    .header__title {
         font-family: var(--primary-heading-fonts);
         color: var(--primary-fonts-color);
         font-size: var(--heading-font-size);
         font-weight: 100;
-        letter-spacing: 5px;
+        word-spacing: 10px;
+        letter-spacing: 3px;
         text-align: center;
-        margin-top: 2rem;
         
     }
-    h2 {
-        font-family: var(--secondary-title-fonts);
+    .header__sub-title {
+        font-family: var(--secondary-heading-fonts);
         color: var(--primary-fonts-color);
         font-size: var(--sub-heading-font-size);
         font-weight: 100;
         text-align: center;
-        margin: 0 250px;
+        padding-bottom: 3rem;
+        width: 750px;
+        word-spacing: normal;
         
         }
 }
-.btn-booking-offers {
+
+/*BUTTON STANDARD*/
+.submit-btn {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 2rem;
+    
        
 }
-.booking-btn__button {
+.submit-btn__button {
     margin-left: 3rem;
     padding: 0.5rem 1rem;
     border: none;
@@ -331,26 +342,30 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: 100;
+    letter-spacing: 2px;
     box-shadow: var(--main-box-shadow);
     word-spacing: 0.5rem;
     width: fit-content;
     cursor: pointer;
 }
-.booking-btn__button:hover {
+.submit-btn__button:hover {
     background-color: var(--primary-text-box-color);
     color: var(--primary-fonts-color);
 }
 
+
+
 /*ROOM GALLORY SECTION*/
-.hotellet-container__grid {
+.room-container__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
     gap: 1rem;
-    padding: 3rem 5rem;
+    padding: 3rem 7rem;
     background-color: #E5E1DA;
 
-    .room-info__link-booking img {
+    .room__article img {
         width: 570px;
         aspect-ratio: 9 / 5;
         display: flex;
@@ -361,162 +376,102 @@ body {
         border-radius: 5px;
         box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
         }
-    .room-type {
+    .heading__title-second--small {
         font-family: var(--primary-heading-fonts);
         color: var(--primary-fonts-color);
         font-weight: 100;
         margin-top: 1rem;
         }
-    .room-information {
+    .articles-detail__box {
         font-family: var(--secondary-title-fonts);
         color: var(--primary-fonts-color);
-        font-size: 24px;
+        font-size: 18px;
         width: 570px;
-        padding-bottom: 2rem;
-}
-.more-images-btn__button-link {
+        height: auto;
+        padding-bottom: 0.5rem;
+    }
+    
+    .room-btn__button {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
     width: 570px;
     background-color: #E5E1DA;
     border: none;
-    
+        
+        .fa-regular {
+            transform: scale(2);
+            margin-right: 10px;
+        }
       
-}
-.more-images-btn__button {
-    border: none;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    color: var(--primary-hover-color);
-    font-family: var(--primary-heading-fonts);
-    font-weight: 100;
-    font-size: 18px;
-    font-style: italic;
+    }
+    .info-btn__submit-btn--drak {
     background-color: #E5E1DA;
-    cursor: pointer;
-   
-}
-.more-images-btn__button:hover {
-    text-decoration: underline;
-}
+    
+    }
+    .info-btn__submit-btn--drak:hover {
+        text-decoration: underline;
+    }
 }
 
 /*FACILITY SECTION*/
 
-.facility-gallory {
+.aside__facility-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .facility-container__title {
-        text-align: center;
-        padding: 2rem 5rem;
-        }
-
-    h2 {
-        font-family: var(--primary-heading-fonts);
-        font-weight: 100;
-        font-size: var(--sub-heading-font-size);
-        color: var(--primary-fonts-color);
-        letter-spacing: 2px;
-        }
-
 }
-.facility-container__grid {
+.aside__facility__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
     gap: 1.5rem;
-    margin: 1rem 5rem;
+    padding: 1rem 1rem;
     
-
-    .more-info__flex img {
+    .aside__article--small img {
         width: 400px;
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 9 / 6;
         border: none;
         border-radius: 5px;
         box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
 
         }
-        .articles-detail__box {
-            width: 400px;
-            font-family: var(--secondary-title-fonts);
-            color: var(--primary-fonts-color);
-            font-size: var(--h3-font-size);
-            font-weight: 300;
-            font-size: 18px;
+        .aside-heading__title-second {
+            text-align: start;
+            margin: 0;
+        }
+        
+        .fa-readme {
+            margin-right: 10px;
         }
         
 }
-.read-more-btn__button-link {
-    border: none;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    color: var(--primary-hover-color);
-    font-family: var(--primary-heading-fonts);
-    font-weight: 100;
-    font-size: 18px;
-    font-style: italic;
-    background-color: var(--primary-bg-color);
-   
-}
-.read-more-btn__button-link:hover {
-    text-decoration: underline;
-    
-}
+
 
 /*SEARCH & BOOKING PAGE*/
 
-
-.shopping-cart__button {
-    width: fit-content;
-    padding: 0.25rem 2rem;
-    border: none;
-    box-shadow: var(--main-box-shadow);
-    background-color: var(--primary-submit-button);
-    border-radius: 4px;
-    
-    i {
-        transform: scale(2);
-        transform: scaleY(-10px);
-    }
-    .shopping-cart {
-        font-family: var(--secondary-title-fonts);
-        font-size: 24px;
-        font-weight: 300;
-        color: var(--primary-fonts-color);
-        border: none;
-        margin-left: 20px;
-        background-color: var(--primary-submit-button);
-    }
-}
-
-.search-and-booking {
+.search {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: auto;
-    gap: 1rem;
-    margin: 0 3rem;
+    gap: 45px;
+    grid-template-columns: min-content minmax(0px, 1fr);
+    grid-auto-flow: row;
+    padding: 0 7rem;
+    background-color: var(--primary-bg-color);
 
-    .room-container__heading__title {
-        width: 100%;
-        text-align: center;
-        font-family: var(--primary-heading-fonts);
-        padding: 2rem;
-        color: var(--primary-fonts-color);
-        font-size: var(--heading-font-size);
+    .search__heading-title {
         letter-spacing: 2px;
         font-weight: 100;
         grid-row: 1;
         grid-column: 1 / span 3;
     }
 
-    .search-and-booking__form {
+    .search__form {
         grid-column: 1;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        align-items: flex-start;
         margin: 0 3rem;
         width: 300px;
         height: 500px;
@@ -538,24 +493,16 @@ body {
             padding-left: 5px;
         }
        
-        .booking-btn__booking-page {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .search-form-btn__submit-button {
             margin: 3rem auto;
             padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            font-family: var(--primary-heading-fonts);
             font-size: 24px;
             color: var(--secondary-fonts-color);
             background-color: var(--primary-hover-color);
-            text-decoration: none;
             font-weight: 100;
-            box-shadow: var(--main-box-shadow);
             cursor: pointer;
         }
-        .booking-btn__booking-page:hover {
+        .search-form-btn__submit-button:hover {
             background-color: var(--primary-text-box-color);
             color: var(--primary-fonts-color);
         }
@@ -567,17 +514,24 @@ body {
         }
    
 }
+
+   
 }
 
-/*ASIDE ON BOOKING PAGE*/
-.room-container__rum-type {
-    max-width: 750px;
+
+/*ROOM INFOMATION SECTION*/
+.room-container {
     display: flex;
-    
+    flex-direction: column;
+    place-items: center;
+   
 }
-.room-info__link-booking {
+
+.room-info__flex-box {
     margin: 0 3rem;
     padding-bottom: 3rem;
+    
+    
       
     img {
         max-width: 750px;
@@ -586,17 +540,14 @@ body {
         border-radius: 4px;
         box-shadow: var(--main-box-shadow);
     }
-    .room-type {
-        max-width: 750px;
-        font-family: var(--primary-heading-fonts);
-        font-size: 24px;
+    .room__heading-title {
+        margin: 0;
+        text-align: start;
     }
-    .room-information {
-        font-family: var(--article-fonts);
-        font-size: 18px;
-    }
+    
 }
-.more-images-btn__button-link{
+
+.search-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -604,24 +555,16 @@ body {
     border: none;
     background-color: var(--primary-bg-color);
 
-    i {
+    .fa-circle-info {
         transform: scale(2);
-    }
-
-    .more-info-btn__button {
-        font-family: var(--primary-heading-fonts);
-        font-weight: 200;
-        font-size: 18px;
-        font-style: italic;
-        color: #223f48;
-        border: none;
-        background-color: var(--primary-bg-color);
-        cursor: pointer;
-        
-    }
-    .more-images-btn__button:hover {
-        text-decoration: underline;
+        margin-right: 10px;
     }
 }
+
+
+
+
+
+
 
 

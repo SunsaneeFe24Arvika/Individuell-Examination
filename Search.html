@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/Style.css">
 
     <script src="https://kit.fontawesome.com/c731891936.js" crossorigin="anonymous"></script>
-    <title>Sök sida</title>
+    <title>Söknings resultad sida</title>
 </head>
 <body>
     <!--WRAPPER-->
@@ -38,28 +38,32 @@
         </header>
 
         <!--MAIN CONTAINER-->
-        <main class="search">
-            <h2 class="search__heading-title heading__title-second heading__title-second--small">
+        <main class="results">
+            <h2 class="results__heading-title heading__title-second heading__title-second--small">
                 VÄLJ DITT RUM
             </h2>
-            <section class="search__form search__form--sticky">
+            <p class="article__text">
+                Du har sökt fredag 3 jan - sön 5 jan , 2 nätter, 1 rum , 2 gäster
+            </p>
+            <section class="results__box results__box--sticky">
             <h1 class="heading__title-first">
-                SÖK & BOKA
+                DU HAR SÖKT
             </h1>
-            <form action="">
-                <label for="check-in__date" class="form__label label-name">Checka In:</label>
-                <input type="date" id="check-in__date" class="form__input input-details">
+            <section class="result__date__in">
+                <h3 class="heading__title-third">
+                    INCHECKNING
+                </h3>
+                <aside class="results-date__title">
+                    <h2 class="heading__title-second">
+                        3 Jan
+                    </h2>
+                    <p class="article__text">Fredag</p>
+                </aside>
+            </section>
 
-                <label for="check-out__date" class="form__label label-name">Checka ut:</label>
-                <input type="date" id="check-out__date" class="form__input input-details">
+            <section class="results__date__out">
 
-                <label class="label-name">Antal gäster:</label>
-                <label for="adult__quantity" class="form__label label-name">Vuxen</label>
-                <input type="number" id="adult__quantity" class="form__input input-details" placeholder="2 gäster">
-
-                <label for="children__quantity" class="form__label label-name">Barn</label>
-                <input type="number" id="children__quantity" class="form__input input-details" placeholder="upp till 17 år">
-            </form>
+            </section>
             <button class="form-btn__submit-button search-form-btn__submit-button">
                 <i class="fa-solid fa-magnifying-glass"></i>SÖK
             </button>
