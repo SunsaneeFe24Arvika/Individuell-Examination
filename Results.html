@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/Style.css">
 
     <script src="https://kit.fontawesome.com/c731891936.js" crossorigin="anonymous"></script>
-    <title>Sök sida</title>
+    <title>Söknings resultad sida</title>
 </head>
 <body>
     <!--WRAPPER-->
@@ -20,56 +20,75 @@
           
             <nav class="menu">
                 <a href="" class="menu__link">
-                    <h3 class="heading__title-third">Hotelet</h3>
+                    <h3 class="menu__title">Hotelet</h3>
+                </a>    
+                <a href="" class="menu__link">
+                    <h3 class="menu__title">Erbjuanden</h3>
                 </a>
                 <a href="" class="menu__link">
-                    <h3 class="heading__title-third">Erbjuanden</h3>
+                    <h3 class="menu__title">Fest & Event</h3>
                 </a>
                 <a href="" class="menu__link">
-                    <h3 class="heading__title-third">Fest & Event</h3>
+                    <h3 class="menu__title">Aktiviteter</h3>
                 </a>
                 <a href="" class="menu__link">
-                    <h3 class="heading__title-third">Aktiviteter</h3>
-                </a>
-                <a href="" class="menu__link">
-                    <h3 class="heading__title-third">Mina sidor</h3>
+                    <h3 class="menu__title">Mina sidor</h3>
                 </a>
             </nav>
         </header>
 
         <!--MAIN CONTAINER-->
-        <main class="search">
-            <h2 class="search__heading-title heading__title-second heading__title-second--small">
-                VÄLJ DITT RUM
-            </h2>
-            <section class="search__form search__form--sticky">
-            <h1 class="heading__title-first">
-                SÖK & BOKA
-            </h1>
-            <form action="">
-                <label for="check-in__date" class="form__label label-name">Checka In:</label>
-                <input type="date" id="check-in__date" class="form__input input-details">
+        <main class="results">
+            <section class="results__heading-title">
+                <h2 class="results__heading-title heading__title-second heading__title-second--small">
+                    VÄLJ DITT RUM
+                </h2>
+                <p class="results__text--center article-text">
+                    Du har sökt fredag 3 jan - sön 5 jan , 2 nätter, 1 rum , 2 gäster
+                </p>
+            </section>
+            <section class="results__flex-box results__box--sticky">
+                <h1 class="heading__title-first">
+                    DU HAR SÖKT
+                </h1>
+                <section class="result__date__in">
+                    <aside class="results-date__title">
+                    <h3 class="heading__title-third">
+                        INCHECKNING
+                    </h3>
+                    <h2 class="heading__title-second">
+                            3 Jan
+                        </h2>
+                        <p class="article-text">Fredag</p>
+                    </aside> 
+                
 
-                <label for="check-out__date" class="form__label label-name">Checka ut:</label>
-                <input type="date" id="check-out__date" class="form__input input-details">
-
-                <label class="label-name">Antal gäster:</label>
-                <label for="adult__quantity" class="form__label label-name">Vuxen</label>
-                <input type="number" id="adult__quantity" class="form__input input-details" placeholder="2 gäster">
-
-                <label for="children__quantity" class="form__label label-name">Barn</label>
-                <input type="number" id="children__quantity" class="form__input input-details" placeholder="upp till 17 år">
-            </form>
-            <button class="form-btn__submit-button search-form-btn__submit-button">
-                <i class="fa-solid fa-magnifying-glass"></i>SÖK
-            </button>
+                <section class="results__date__out">
+                    <aside class="results-date__title">
+                        <h3 class="heading__title-third">
+                            UTCHECKNING
+                        </h3>
+                        <h2 class="heading__title-second">
+                            5 Jan
+                        </h2>
+                        <p class="article-text">Fredag</p>
+                    </aside>
+                </section>
+                    <p class="article-text">Antal nätter</p>
+                    <p class="article-text">2 nätter</p>
+                    <p class="article-text">Antal rum:</p>
+                    <p class="article-text">1 rum, 2 gäster</p>
+                    <button class="submit-btn">
+                        ÄNDRA SÖKNING
+                    </button>
+                </section>
             </section>
 
              <!--ROOM TYPE-1-->
-          <section class="room-container">
-            <article class="room-info__flex-box">
+            <section class="results-room__grid room-container">
+            <article class="results-info room-info__flex-box">
              <img src="assets/images/king-size-bed.png" alt="dubble bedroom with king size bed">
-             <h2 class="room__heading-titel heading__title-second">
+             <h2 class="results__heading-titel heading__title-second aside-heading__title-second">
               Dubbelrum premium Suite – 27 kvm
              </h2>
              <p class="article-text">
@@ -80,37 +99,15 @@
                 <i class="fa-solid fa-circle-info"></i>
                 MER INFO
              </button>
-             <button class="room-btn__booking-btn submit-btn__button">
+             <button class="submit-btn__button">
                 VÄLJA & BOKA
                </button>
              </aside>
             </article>
 
           <!--ROOM TYPE-2-->
-         
-            <article class="room-info__flex-box">
-             <img src="assets/images/delux-room.png" alt="dubble bed for delux room">
-             <h2 class="room__heading-titel heading__title-second">
-              Dubbelrum Delux – 27 kvm
-             </h2>
-             <p class="article-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque non perspiciatis quaerat tempore esse, provident voluptate numquam recusandae illum voluptatibus?
-             </p>
-             <aside class="search-btn">
-                <button class="info-btn__submit-btn info-btn__submit-btn--drak">
-                   <i class="fa-solid fa-circle-info"></i>
-                   MER INFO
-                </button>
-                <button class="submit-btn__button">
-                   VÄLJA & BOKA
-                  </button>
-                </aside>
-            </article>
           
-          
-          <!--ROOM TYPE-3-->
-          
-          <article class="room-info__flex-box">
+          <article class="results-info room-info__flex-box">
              <img src="assets/images/04-day.jpg" alt="dubble bedroom with king size bed">
              <h2 class="room__heading-titel heading__title-second">
               Familjen stuga – 105 kvm
@@ -130,9 +127,9 @@
             </article>
           
 
-          <!--ROOM TYPE-4-->
+          <!--ROOM TYPE-3-->
           
-          <article class="room-info__flex-box">
+          <article class="results-info room-info__flex-box">
              <img src="assets/images/05-day.jpg" alt="dubble bedroom with king size bed">
              <h2 class="room__heading-titel heading__title-second">
               Familjen stuga – 115 kvm
@@ -151,32 +148,9 @@
                 </aside>
             </article>
          
-
-          <!--ROOM TYPE-5-->
+          <!--ROOM TYPE-4-->
           
-          <article class="room-info__flex-box">
-             <img src="assets/images/08-day.jpg" alt="dubble bedroom with king size bed">
-             <h2 class="room__heading-titel heading__title-second">
-              Premium stuga – 120 kvm
-             </h2>
-             <p class="article-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque non perspiciatis quaerat tempore esse, provident voluptate numquam recusandae illum voluptatibus?
-             </p>
-             <aside class="search-btn">
-                <button class="info-btn__submit-btn info-btn__submit-btn--drak">
-                   <i class="fa-solid fa-circle-info"></i>
-                   MER INFO
-                </button>
-                <button class="submit-btn__button">
-                   VÄLJA & BOKA
-                  </button>
-                </aside>
-            </article>
-          
-
-          <!--ROOM TYPE-6-->
-          
-          <article class="room-info__flex-box">
+          <article class="results-info room-info__flex-box">
              <img src="assets/images/living-room.png" alt="dubble bedroom with king size bed">
              <h2 class="room__heading-titel heading__title-second">
               Premium lägenhet – 69 kvm
