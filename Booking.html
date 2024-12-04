@@ -42,8 +42,13 @@
           
         </header>
 
-        <main class="booking-container">
-            <fieldset>
+        <main class="booking-header__title">
+            <h1 class="header__title-first header__title-first__padding-top">Dina uppgifter och betalning</h1>
+            <h3 class="heading__title-third">Du är nästan klar med din bokning hos oss på Bonz.ai</h3>
+            
+            
+            <section class="booking-container">
+             <fieldset>
                 <legend class="legend__form">Ansvarig för bokning</legend>
             <form action="" method="post">          
                
@@ -65,27 +70,52 @@
                     <option value="single">Enkelrum</option>
                     <option value="double">Dubbelrum</option>
                     <option value="suite">Svit</option>
-                </select>
-    
-                <label for="payment" class="form__label">Betalningsmetod:</label>
-                <select id="payment" name="payment" required>
-                    <option value="creditcard">Kreditkort</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="swish">Swish</option>
+                    <option value="apartment">Familjelägenhet</option>
+                    <option value="cottage">Familjestuga</option>
                 </select>
                 <input type="checkbox" name="company" class="form__input--short" id="customer-company">
                 <label for="room" class="form__label--short">Jag är en företag kund</label>
+            </form>
             </fieldset>
             
-    
+            <fieldset>
+                <legend class="legend__form">Fakturering</legend>
+            <form action="" method="post">          
+               
 
-            <div class="elem-group">
-                <label for="message">Anything Else?</label>
-                <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-              </div>
-    
-                <button type="submit">Boka Nu</button>
+                <label for="adress" class="form__label">Adress:</label>
+                <input type="text" id="adress" class="form__input" name="name" required placeholder="C/O adress till val">
+                <input type="text" id="adress" class="form__input" name="road" required placeholder="Gatuadress">
+                <input type="text" id="adress" class="form__input" name="road" required placeholder="Stad">
+                <input type="text" id="adress" class="form__input" name="road" required placeholder="Postnummer">
+                <input type="text" id="adress" class="form__input" name="road" required placeholder="Land">
+                <input type="text" id="adress" class="form__input" name="road" required placeholder="Telefonnummer*">
+
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend class="legend__form">Speciella önskemål</legend>
+                <form action="" method="post">
+                    <textarea name="comment" id="" cols="73" rows="5">Skriv in ditt önskemål</textarea>
+                    
+                    
+                </form>
+            </fieldset>
+                <fieldset>
+                    <legend class="legend__form">Betalningsmetod</legend>
+                    <select id="payment" name="payment" required>
+                    <option value="creditcard">Kreditkort</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="swish">Swish</option>
+                    <option value="klarna">Klarna</option>
+                    <option value="faktura">Faktura för företag</option>
+                </select>
+                
+            </fieldset>
+                <button class="submit-btn__button submit-btn__button--center" type="submit">BOKA & BETALA</button>
             </form>
+        </section>
         </div>
             
     

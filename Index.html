@@ -41,6 +41,9 @@
                         Mina sidor
                     </h3>
                 </a>
+                <a href="" class="menu__ham">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </nav>
           
         </header>
@@ -51,7 +54,7 @@
             
             <section class="container__form">
                 <form>
-                    <label class="form__label">Välj en rumstyp:</label>
+                    <label for="form-options__type" class="form__label">Välj en rumstyp:</label>
                     <select id="form-options__type" name="form__option" required>
                         <option value="single-room">Enkelrum</option>
                         <option value="dubble-room">Superior tvåbäddsrum</option>
@@ -67,21 +70,21 @@
                     <label class="form__label">Check Out:</label>
                     <input type="date" class="form__input">
 
-                    <label class="form__label">Gäster:</label>
+                    <label for="form-options__quantity" class="form__label">Gäster:</label>
                     <select id="form-options__quantity" name="room-quantity" required>
                         <option value="dubble">1 rum, 2 gäster</option>
                         <option value="family">1 rum, 4 gäster</option>
                         <option value="single">1 rum, 1 gäst</option>
                     </select>
                 
-                   <button class="form-btn__submit-button">
+                   <button class="submit-btn__button submit-btn__button--small">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Sök
                     </button>
                 </form>     
             </section>
             
-            <h1 class="header__title heading__title-first--tranform">VÄLKOMMEN TILL BONZ!</h1>
+            <h1 class="header__title-first header__title-first--larg heading__title-first--tranform">VÄLKOMMEN TILL BONZ!</h1>
 
         </main> 
             <!--OFFERS CONTAINER-->
@@ -126,6 +129,21 @@
                 </article>
                 </section>
             </aside>
+
+            <!--PRESENTKORT-->
+            <section class="gift-container">
+                <article class="gift">
+                    <figure class="gift__image"></figure>
+                </article>
+                <article class="gift-article">
+                    <h2 class="heading__title-second heading__title-second--left">ENKEL ATT GE, UNDERBART ATT FÅ</h2>
+                    <p class="article-text">Kanske tänker du att presentkort är tråkigt att ge?<br>
+                        Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>
+                    <button type="submit" class="submit-btn__button">BESTÄLLA PRESENTKORT</button>
+                </article>
+            </section>
+            <hr>
+
         
 
         <footer class="grid-footer">
