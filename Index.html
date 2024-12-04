@@ -35,7 +35,11 @@
                     <h3 class="menu__title">Aktiviteter</h3>
                 </a>
                 <a href="" class="menu__link">
-                    <h3 class="menu__title">Mina sidor</h3>
+                    
+                    <h3 class="menu__title menu__title--icon">
+                        <i class="fa-regular fa-user"></i>
+                        Mina sidor
+                    </h3>
                 </a>
             </nav>
           
@@ -47,26 +51,37 @@
             
             <section class="container__form">
                 <form>
-                    <label class="form__label">Välj en rumstyp</label>
-                    <input type="text" class="form__input" placeholder="Rumstyp">
+                    <label class="form__label">Välj en rumstyp:</label>
+                    <select id="form-options__type" name="form__option" required>
+                        <option value="single-room">Enkelrum</option>
+                        <option value="dubble-room">Superior tvåbäddsrum</option>
+                        <option value="deluxe">Deluxe-rum</option>
+                        <option value="juniorsvit">Juniorsvit- 1 dubbelsäng</option>
+                        <option value="apartment">Familjelägenhet - flera sängar</option>
+                        <option value="cottage">Familjestuga - upp till 10 sovplats</option>
+                    </select>
 
-                    <label class="form__label">Check-In</label>
+                    <label class="form__label">Check-In:</label>
                     <input type="date" class="form__input">
 
-                    <label class="form__label">Check Out</label>
+                    <label class="form__label">Check Out:</label>
                     <input type="date" class="form__input">
 
-                    <label class="form__label">Gäster</label>
-                    <input type="number" class="form__input" placeholder="1 rum, 2 gäster">
+                    <label class="form__label">Gäster:</label>
+                    <select id="form-options__quantity" name="room-quantity" required>
+                        <option value="dubble">1 rum, 2 gäster</option>
+                        <option value="family">1 rum, 4 gäster</option>
+                        <option value="single">1 rum, 1 gäst</option>
+                    </select>
                 
-                    <button class="form-btn__submit-button form-btn__button--flex">
+                   <button class="form-btn__submit-button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Sök
                     </button>
                 </form>     
             </section>
             
-            <h1 class="header__title heading__title-first">VÄLKOMMEN TILL BONZ!</h1>
+            <h1 class="header__title heading__title-first--tranform">VÄLKOMMEN TILL BONZ!</h1>
 
         </main> 
             <!--OFFERS CONTAINER-->
@@ -79,26 +94,35 @@
                 </section> 
 
                 <section class="offers__article__grid">
-                <article class="offers__image">
+                <article class="offers__gallery">
                     <img src="assets/images/christmas-market-1864241_1280.jpg" alt="Chrismas market">
                     <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
                     <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="info-btn__submit-btn">LÄS MER</button>
+                    <button class="info-btn__submit-btn">
+                        <i class="fa-brands fa-readme"></i>
+                        LÄSA MER
+                      </button>
                 </article>
             
         
-                <article class="offers__image">
+                <article class="offers__gallery">
                     <img src="assets/images/new-year-party.png" alt="New Year's party with dogs">
-                    <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
+                    <h3 class="offers__heading__title heading__title-third">FIRA NYTT ÅR MED DE DU ÄLSKAR</h3>
                     <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="info-btn__submit-btn">LÄS MER</button>
+                    <button class="info-btn__submit-btn">
+                        <i class="fa-brands fa-readme"></i>
+                        LÄSA MER
+                      </button>
                 </article>
             
-                <article class="offers__image">
+                <article class="offers__gallery">
                     <img src="assets/images/wedding.png" alt="A wedding couple">
-                    <h3 class="offers__heading__title heading__title-third">UPPLEV JULMARKNAD PÅ STAN</h3>
+                    <h3 class="offers__heading__title heading__title-third">GÖR DIN DAG EXTRA SPECIAL</h3>
                     <p class="offers__text__article article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam illo nemo nesciunt at. Tenetur quos rem perferendis pariatur, itaque veniam placeat rerum, fugit culpa laudantium voluptates velit laboriosam voluptas veritatis.</p>
-                    <button class="info-btn__submit-btn">LÄS MER</button>
+                    <button class="info-btn__submit-btn">
+                        <i class="fa-brands fa-readme"></i>
+                        LÄSA MER
+                      </button>
                 </article>
                 </section>
             </aside>
