@@ -40,10 +40,10 @@ body {
     background-color: var(--primary-bg-color);
 }
 .page-wrapper {
-    min-width: 1000px;
+    width: 100vw;
 }
 .heading {
-    padding: 50px 200px;
+    padding: 3rem 5rem;
     background-image: var(--bg-gradient);
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ body {
         font-family: var(--primary-heading-fonts);
         word-spacing: 0.5rem;
         font-weight: 500;
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
     .menu__title:hover {
             background-color: var(--hover-button-brown);
@@ -319,28 +319,29 @@ body {
         box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
         margin-bottom: 3rem; 
     }
-    .header__title-first {
-        font-family: var(--primary-heading-fonts);
-        color: var(--primary-fonts-color);
-        font-size: var(--heading-font-size);
-        font-weight: 100;
-        word-spacing: 10px;
-        letter-spacing: 1px;
-        text-align: center;
-        
-    }
-    .header__sub-title {
-        font-family: var(--secondary-heading-fonts);
-        color: var(--primary-fonts-color);
-        font-size: var(--sub-heading-font-size);
-        font-weight: 100;
-        text-align: center;
-        padding-bottom: 3rem;
-        width: 750px;
-        word-spacing: normal;
-        
-        }
+    
 }
+.header__title-first {
+    font-family: var(--primary-heading-fonts);
+    color: var(--primary-fonts-color);
+    font-size: var(--heading-font-size);
+    font-weight: 100;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+.header__sub-title {
+    font-family: var(--secondary-heading-fonts);
+    color: var(--primary-fonts-color);
+    font-size: var(--sub-heading-font-size);
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 3rem;
+    width: 750px;
+    word-spacing: normal;
+    
+    }
 
 /*BUTTON STANDARD*/
 .submit-btn {
@@ -487,13 +488,15 @@ body {
     grid-auto-flow: row;
     padding: 0 7rem;
     background-color: var(--primary-bg-color);
+    text-align: center;
+    color: var(--primary-fonts-color);
 
     .search__heading-title {
         letter-spacing: 2px;
         font-weight: 100;
         grid-row: 1;
         grid-column: 1 / span 3;
-        pad: 3rem 0;
+        padding: 2rem 0;
     }
 
     .search__form {
@@ -716,60 +719,55 @@ body {
     
 }
 
-/*div.elem-group {
-    margin: 20px 0;
-  }
-  
-  div.elem-group.inlined {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    margin-left: 1%;
-  }
-  
-  label {
-    display: block;
-    font-family: 'Nanum Gothic';
-    padding-bottom: 10px;
-    font-size: 1.25em;
-  }
-  
-  input, select, textarea {
-    border-radius: 2px;
-    border: 2px solid #777;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: 'Nanum Gothic';
-    width: 100%;
-    padding: 10px;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-  
-  textarea {
-    height: 250px;
-  }
-  
-  hr {
-    border: 1px dotted #ccc;
-  }
-  
-  button {
-    height: 50px;
-    /*background: orange;
-    border: none;
-    color: white;
-    font-size: 1.25em;
-    font-family: 'Nanum Gothic';
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    border: 2px solid black;
-  }
+/*MEDIA QUERIES EFFECT
+ADAPTING TO MOBILE AND SMALLER DEVICES*/
 
-*/
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    .page-wrapper {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+    }
+    .heading .menu {
+        display: none;
+    }
+    .container, .icon-section, .aside, .footer-news-letter__form, .footer-adress, .footer__link-item, .footer-social-media__icon {
+        padding: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__link {
+        margin: 5px 0;
+    }
+
+    .heading__logo img {
+        width: 80%;
+    }
+
+    .form__label, .form__input, .form-btn__submit-button, .icon-section {
+        width: 100%;
+    }
+
+    .offers__article__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offers__gallery {
+        margin: 10px 0;
+    }
+
+    .footer-social-media__icon i {
+        margin: 5px;
+    }
+}
