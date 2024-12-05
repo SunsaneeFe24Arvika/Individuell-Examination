@@ -55,7 +55,7 @@
             <section class="container__form">
                 <form>
                     <label for="form-options__type" class="form__label">Välj en rumstyp:</label>
-                    <select id="form-options__type" name="form__option" required>
+                    <select id="form-options__type" name="form__option">
                         <option value="single-room">Enkelrum</option>
                         <option value="dubble-room">Superior tvåbäddsrum</option>
                         <option value="deluxe">Deluxe-rum</option>
@@ -71,7 +71,7 @@
                     <input type="date" class="form__input">
 
                     <label for="form-options__quantity" class="form__label">Gäster:</label>
-                    <select id="form-options__quantity" name="room-quantity" required>
+                    <select id="form-options__quantity" name="room-quantity">
                         <option value="dubble">1 rum, 2 gäster</option>
                         <option value="family">1 rum, 4 gäster</option>
                         <option value="single">1 rum, 1 gäst</option>
@@ -84,11 +84,14 @@
                 </form>     
             </section>
             
-            <h1 class="header__title-first header__title-first--larg heading__title-first--tranform">VÄLKOMMEN TILL BONZ!</h1>
+            <h1 class="header__title-first header__title-first--larg heading__title-first--tranform header__title__media-query">VÄLKOMMEN TILL BONZ!</h1>
 
         </main> 
             <!--OFFERS CONTAINER-->
-            <aside class="aside">
+            <section class="aside">
+                
+                    <figure class="aside__header__img--circle"></figure>
+               
                 <section class="aside__flex">
                 
                 <h2 class="aside__heading__title heading__title-second">ETT ERBJUDANDE SOM DU INTE VILL MISSA!</h2>
@@ -128,7 +131,7 @@
                       </button>
                 </article>
                 </section>
-            </aside>
+            </section>
 
             <!--PRESENTKORT-->
             <section class="gift-container">
@@ -136,8 +139,8 @@
                     <figure class="gift__image"></figure>
                 </article>
                 <article class="gift-article">
-                    <h2 class="heading__title-second heading__title-second--left">ENKEL ATT GE, UNDERBART ATT FÅ</h2>
-                    <p class="article-text">Kanske tänker du att presentkort är tråkigt att ge?<br>
+                    <h2 class="heading__title-second heading__title-second--left gift-article__media-query">ENKEL ATT GE, UNDERBART ATT FÅ</h2>
+                    <p class="article-text gift-article-text__media-query">Kanske tänker du att presentkort är tråkigt att ge?<br>
                         Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>
                     <button type="submit" class="submit-btn__button">BESTÄLLA PRESENTKORT</button>
                 </article>
