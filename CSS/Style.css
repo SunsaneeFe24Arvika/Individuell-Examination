@@ -58,10 +58,11 @@ body {
         transform: translateY(10px);*/
     
     }
-    .menu__link {
+    .menu__link, .menu__hem {
         text-decoration: none;
         color: var(--primary-fonts-color);
     }
+    
     .menu__title {
         text-align: center;
         font-family: var(--primary-heading-fonts);
@@ -93,15 +94,17 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     
-
     .container__form {
+
         background-color: var(--primary-bg-color);
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
         padding: 1.5rem;
+
     }
+
     .form__label, .form__input {
         font-family: var(--article-fonts);
         padding-right: 5px;
@@ -117,8 +120,14 @@ body {
         padding-left: 10px;
         
     }
-    
+ 
 }
+.article-text__no--padding {
+    padding-top: 2rem;
+    padding-bottom: 10px;
+}
+
+
 
 
 /*OFFERS SECTION*/
@@ -129,10 +138,10 @@ body {
     padding: 0 5rem;
     align-items: center;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    
 
     .aside__header__img--circle {
-    background-image: url(../assets/images/nwy-decoration.png);
+    background-image: url(../assets/images/man-and-women_in_spa.png);
     width: 30%;
     background-position: center;
     background-repeat: no-repeat;
@@ -143,6 +152,7 @@ body {
     align-items: center;
     background-color: var(--primary-bg-color);
     border-radius: 50%;
+    margin-bottom: 2rem;
    
 
     }
@@ -203,8 +213,6 @@ hr {
     color: var(--primary-fonts-color);
     font-size: var(--heading-font-size);
     font-weight: 100;
-    word-spacing: 10px;
-    letter-spacing: 1px;
     text-align: center;
     
 }
@@ -228,7 +236,7 @@ hr {
     font-size: var(--sub-heading-font-size);
     font-weight: 100;
     color: var(--primary-fonts-color);
-    word-spacing: 10px;
+    
 }
 .heading__title-second--center {
     text-align: center;
@@ -258,7 +266,7 @@ hr {
     text-align: center;
     padding-bottom: 3rem;
     width: 750px;
-    word-spacing: normal;
+    
     
 }
 .header__sub-title--small {
@@ -266,13 +274,19 @@ hr {
     font-size: var(--article-font-size);
 }
 
+.article-text__no--padding {
+    font-family: var(--article-fonts);
+    font-size: var(--article-font-size);
+    font-weight: 400;
+    text-align: left;
+    color: var(--primary-fonts-color);
+}
 .article-text {
     font-family: var(--article-fonts);
     font-size: var(--article-font-size);
     font-weight: 400;
     padding-bottom: 2rem;
     text-align: left;
-    overflow: hidden;
     color: var(--primary-fonts-color);
 }
 .article-text--center {
@@ -406,6 +420,7 @@ hr {
     align-items: center;
     background-color: var(--primary-bg-color);
     border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 
@@ -454,7 +469,7 @@ hr {
     font-size: var(--article-font-size);
     font-weight: 100;
     letter-spacing: 2px;
-    word-spacing: 0.5rem;
+    word-spacing: 5px;
     width: fit-content;
     cursor: pointer;
 }
@@ -506,8 +521,9 @@ hr {
     display: grid;
     grid-template-columns: 600px 600px;
     grid-auto-rows: auto;
-    place-items: center;
-    padding: 50px 250px;
+    align-items: center;
+    place-content: center;
+    padding: 3rem 0;
     gap: 1rem;
     background-color: #E5E1DA;
 
@@ -652,10 +668,11 @@ hr {
         }
    
 }
-.search__form--fixed {
-    position: fixed;
+/* TO LOCK A SEACH FORM 
+    .search__form--fixed {
+        position: fixed;
 
-}
+}*/
    
 }
 .description {
@@ -854,20 +871,22 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
 @media screen and (max-width: 768px) {
     .page-wrapper {
         width: 100%;
-        padding: 0;
         flex-direction: column;
         align-items: center;
     }
     .heading {
         padding: 1rem 2rem;
     }
+    
     .heading .menu__link {
+
         display: none;
     }
 
     .heading .menu__ham {
         display: block;
         transform: scale(2);
+        color: var(--primary-fonts-color);
     }
 
 
@@ -878,9 +897,14 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
         align-items: center;
     }
     .container__form {
-        width: 100%;
-        height: 300px;
+        padding: 0;
+    }
+    .container__form form {
+        width: 90%;
+        display: flex;
         flex-direction: column;
+
+
     }
     .form__input, #form-options__type,
     #form-options__quantity {
@@ -932,15 +956,18 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
     }
     .submit-btn__button {
         font-size: 12px;
-        margin: 0;
-        margin-bottom: 2rem;
         padding: 0.5rem;
+        margin: 0;
+    }
+    .search__button-media-query {
+        align-self: flex-end;
+        margin-top: 1rem;
     }
 
 /*END BUTTONS*/
     
     .header__title__media-query {
-        margin-top: 45%;
+        margin-top: 40%;
     }
     .aside {
         width: 100%;
@@ -951,7 +978,7 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
         padding: 2rem 0.25rem;
         
         .aside__header__img--circle {
-            width: 80%;
+            width: 65%;
             margin-bottom: 1rem;
         }
     }
@@ -987,7 +1014,7 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
 
     }
     .gift__image {
-        width: 80%;
+        width: 65%;
         transform: translateX(0);
     }
 
@@ -999,7 +1026,7 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
     }
     .gift-article {
         margin: 0;
-        padding: 0 2rem;
+        padding: 2rem;
         gap: 0;
         align-items: center;
     }
@@ -1026,6 +1053,8 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
 
     .footer__link {
         font-size: 12px;
+        word-spacing: 2px;
+        line-height: 1.5rem;
         
     }
    }
@@ -1033,50 +1062,45 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
    /*ABOUT HOTEL*/
 
    .header__image {
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 
     .header__image--bg {
-        width: 80%;
+        width: 65%;
         margin: 1rem 0;
     }
     .header__sub-title {
-        width: 90%;
+        width: 80%;
     }
    }
-
-   .room-container__grid {
-    width: 100%;
-    display: flex;
+   .room-btn__button {
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 10px;
+    gap: 1rem;
+   }
+   .room__article {
+        width: 80%;
 
-    .room__article {
-        .article-text {
-            width: 355px;
-            padding-bottom: 10px;
-        }
-    }
-    .room-btn__button {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-       }
    }
+   .room-container__grid {
+    width: 80%;
+
    .room__article img {
-    max-width: 355px;
+        width: 300px;
+    }
    }
+
+
+   
    
 
    /*HOTEL FACILITY SECTION*/
    .aside__facility__grid {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1100,6 +1124,9 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
 .search {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 
     .search__form, .search__form--fixed {
         position: static;
@@ -1108,18 +1135,41 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
     }
     
 }
-.room-info__flex-box {
-    padding: 0;
+.room-container__grid, .search-room__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .room-info__flex-box {
+    width: 355px;
     margin: 0;
+
     img {
         width: 355px;
+        aspect-ratio: 5 / 3;
     }
+    
 }
 .search-btn {
     flex-direction: column;
     align-items: end;
+    gap: 1rem;
 }
 
+/*SEARCH RESULTS FOR ROOM*/
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 }

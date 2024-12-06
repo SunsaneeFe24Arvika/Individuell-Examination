@@ -17,31 +17,31 @@
                 <!--LOGO AND MENU-->
             <figure class="heading__logo">
                 <a href="Index.html" class="heading-logo__link">
-                    <img src="assets/logo/bonz.ai-logo-black-landscape.png" alt="">
+                    <img src="assets/logo/bonz.ai-logo-black-landscape.png" alt="bonz-ai-logo">
                 </a>
             </figure>
           
             <nav class="menu">
-                <a href="" class="menu__link">
+                <a href="#" class="menu__link">
                     <h3 class="menu__title">Hotelet</h3>
                 </a>    
-                <a href="" class="menu__link">
+                <a href="#" class="menu__link">
                     <h3 class="menu__title">Erbjuanden</h3>
                 </a>
-                <a href="" class="menu__link">
+                <a href="#" class="menu__link">
                     <h3 class="menu__title">Fest & Event</h3>
                 </a>
-                <a href="" class="menu__link">
+                <a href="#" class="menu__link">
                     <h3 class="menu__title">Aktiviteter</h3>
                 </a>
-                <a href="" class="menu__link">
+                <a href="#" class="menu__link">
                     
                     <h3 class="menu__title menu__title--icon">
                         <i class="fa-regular fa-user"></i>
                         Mina sidor
                     </h3>
                 </a>
-                <a href="" class="menu__ham">
+                <a href="#" class="menu__ham">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </nav>
@@ -57,17 +57,17 @@
              <fieldset>
                 <legend class="legend__form">Ansvarig för bokning</legend>
                 <form method="post">          
-                    <label class="form__label">Namn:</label>
-                    <input type="text" class="form__input" name="name" required placeholder="Ange ditt namn*">
+                    <label for="name" class="form__label">Namn:</label>
+                    <input type="text" id="name" class="form__input" name="name" required placeholder="Ange ditt namn*">
         
-                    <label class="form__label">E-post:</label>
-                    <input type="email" class="form__input" name="email" required placeholder="Ange din e-post*">
+                    <label for="email" class="form__label">E-post:</label>
+                    <input type="email" id="email" class="form__input" name="email" required placeholder="Ange din e-post*">
         
-                    <label class="form__label">Incheckningsdatum:</label>
-                    <input type="date" class="form__input" name="checkin" required>
+                    <label for="checkin" class="form__label">Incheckningsdatum:</label>
+                    <input type="date" id="checkin" class="form__input" name="checkin" required>
         
-                    <label class="form__label">Utcheckningsdatum:</label>
-                    <input type="date" class="form__input" name="checkout" required>
+                    <label for="checkout" class="form__label">Utcheckningsdatum:</label>
+                    <input type="date" id="checkout" class="form__input" name="checkout" required>
         
                     <label for="room" class="form__label">Rumstyp:</label>
                     <select id="room" name="room">
@@ -77,21 +77,21 @@
                         <option value="apartment">Familjelägenhet</option>
                         <option value="cottage">Familjestuga</option>
                     </select>
-                    <input type="checkbox" name="company" class="form__input--short" id="customer-company">
-                    <label for="room" class="form__label--short">Jag är en företag kund</label>
+                    <input type="checkbox" id="checkbox" name="company" class="form__input--short" id="customer-company">
+                    <label for="checkbox" class="form__label--short">Jag är en företag kund</label>
                 </form>
             </fieldset>
             
             <fieldset>
                 <legend class="legend__form">Fakturering</legend>
                 <form method="post">          
-                    <label class="form__label">Adress:</label>
-                    <input type="text" class="form__input" name="name" required placeholder="C/O adress till val">
-                    <input type="text" class="form__input" name="road" required placeholder="Gatuadress">
-                    <input type="text" class="form__input" name="road" required placeholder="Stad">
-                    <input type="text" class="form__input" name="road" required placeholder="Postnummer">
-                    <input type="text" class="form__input" name="road" required placeholder="Land">
-                    <input type="text" class="form__input" name="road" required placeholder="Telefonnummer*">
+                    <label for="adress" class="form__label">Adress:</label>
+                    <input type="text" id="adress" class="form__input" name="name" placeholder="C/O adress till val">
+                    <input type="text" id="adress" class="form__input" name="road" placeholder="Gatuadress">
+                    <input type="text" id="adress" class="form__input" name="road" placeholder="Stad">
+                    <input type="text" id="adress" class="form__input" name="road" placeholder="Postnummer">
+                    <input type="text" id="adress" class="form__input" name="road" placeholder="Land">
+                    <input type="text" id="adress" class="form__input" name="road" placeholder="Telefonnummer*">
 
                 </form>
             </fieldset>
@@ -99,14 +99,15 @@
             <fieldset>
                 <legend class="legend__form">Speciella önskemål</legend>
                 <form method="post">
-                    <textarea name="comment" id="form__comment" cols="70" rows="5">Skriv in ditt önskemål</textarea>
+                    <label for="form__comment" class="form__label">Skriv in ditt önskemål:</label>
+                    <textarea name="comment" id="form__comment" cols="70" rows="5"></textarea>
        
                 </form>  
             </fieldset>
 
             <fieldset>
                     <legend class="legend__form">Betalningsmetod</legend>
-                    <select id="payment" name="payment">
+                    <select id="form__comment" name="payment">
                         <option value="creditcard">Välj betalning...</option>
                         <option value="creditcard">Kreditkort</option>
                         <option value="paypal">PayPal</option>
@@ -140,9 +141,9 @@
         <footer class="grid-footer">
 
             <section class="footer-news-letter__form">
-                    <label class="footer__label__email">FÅ VÅRT NYHETSBREV!</label>
+                    <label for="email-footer" class="footer__label__email">FÅ VÅRT NYHETSBREV!</label>
                     <aside class="footer__input">
-                        <input type="text" class="footer__input--email" placeholder="Din email...">
+                        <input type="text" id="email-footer" class="footer__input--email" placeholder="Din email...">
                         <i class="fa-solid fa-paper-plane"></i>
                     </aside>
             </section>
@@ -155,11 +156,11 @@
                 </section>
                 
                 <section class="footer__link-item">
-                    <a href="about-us" class="footer__link">OM OSS</a>
-                    <a href="contact-us" class="footer__link">Kontakta oss</a>
-                    <a href="find-us" class="footer__link">Hitta hit</a>
-                    <a href="jobs" class="footer__link">Lediga jobb</a>
-                    <a href="QandA" class="footer__link">FAQ-Vanliga frågor</a>    
+                    <a href="#" class="footer__link">OM OSS</a>
+                    <a href="#" class="footer__link">Kontakta oss</a>
+                    <a href="#" class="footer__link">Hitta hit</a>
+                    <a href="#" class="footer__link">Lediga jobb</a>
+                    <a href="#" class="footer__link">FAQ-Vanliga frågor</a>   
                 </section>
                 
                 <section class="footer-social-media__icon">
