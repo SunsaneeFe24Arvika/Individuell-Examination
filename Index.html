@@ -52,13 +52,13 @@
 
         <main class="container">
             
-            <section class="container__form"></section>
-                    <fieldset>
-                    <label for="date-in" class="form__label">Ankomsdatum:</label>
-                    <input type="date" id="date-in" class="form__input">
+            <section class="container__form">
+                    <form>
+                    <label for="date-in" class="form__label__first">Ankomsdatum:</label>
+                    <input type="date" id="date-in" class="form__input__first">
 
-                    <label for="form-options__quantity" class="form__label">Antal gäster:</label>
-                    <select class="form-options__quantity" name="room-quantity">
+                    <label for="form-options__quantity" class="form__label__first">Antal gäster:</label>
+                    <select class="form-options__quantity" id="form-options__quantity" name="room-quantity">
                         <option value="dubble">1 rum, 2 gäster</option>
                         <option value="family">1 rum, 4 gäster</option>
                         <option value="single">1 rum, 1 gäst</option>
@@ -69,7 +69,7 @@
                     Sök
                     </button>
 
-                </fieldset>
+                    </form>
          
             </section>
             

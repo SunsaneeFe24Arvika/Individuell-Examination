@@ -41,9 +41,7 @@ body {
     display: grid;
     place-items: center;
 }
-.page-wrapper {
-    width: 100vw;
-}
+
 .heading {
     padding: 3rem 5rem;
     background-image: var(--bg-gradient);
@@ -84,18 +82,14 @@ body {
     
    
 /*SEARCH FORM SECTION*/
+    .container {
+        background-image: url(../assets/images/living-roombeside-mountain.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px; 
+}
 
-.container {
-    background-image: url(../assets/images/living-roombeside-mountain.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
-.article-text__no--padding {
-    padding-top: 2rem;
-    padding-bottom: 10px;
-}
 .container__form {
     background-color: var(--primary-bg-color);
     display: flex;
@@ -104,18 +98,25 @@ body {
     box-shadow: 0 2px 6px 0 rgba(3, 3, 3, 0.25);
     padding: 1.5rem;
 }
+.container__form form {
+    display: flex;
+    flex-direction: row;
+}
 
-.form__label, .form__input {
+.form__label__first, .form__input__first {
+    width: 100%;
     font-family: var(--article-fonts);
     font-size: 16px;
     padding-right: 5px;
     padding-left: 10px;
-    height: 30px;
+    height: 40px;
+    border: none;
+    margin: 0;
 }
 .form-options__type, .form-options__quantity {
     font-family: var(--article-fonts);
-
-    
+    height: 40px;
+    border: none;
 }
 input {
     padding-left: 10px;
@@ -799,7 +800,9 @@ hr {
     background-image: var(--bg-gradient);
     
 }
-.form__input, select {
+.booking-form__input, 
+.form__input-checkbox, 
+#room, #payment {
     width: 97%;
     height: 40px;
     margin: 0 0.5rem 1rem 0.5rem;
@@ -815,7 +818,7 @@ hr {
     font-size: var(--article-font-size);
     
 }
-.form__label {
+.booking-form__label {
     padding-left: 1rem;
     font-family: var(--article-fonts);
     font-size: var(--article-font-size);
@@ -832,6 +835,13 @@ hr {
 }
 textarea {
     font-family: var(--article-fonts);
+}
+.betalning-btn__button--center {
+    margin:  1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /*MEDIA QUERIES EFFECT
@@ -929,13 +939,10 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
         margin: 0;
     }
     .search__button-media-query {
-        align-self: flex-end;
-        margin-top: 1rem;
+        align-self: center;
+        margin: 1rem 0;
     }
-    .betalning-btn__button--center {
-        margin:  1rem 0;
-        transform: translateX(35%);
-    }
+    
     .search-btn {
         display: flex;
         flex-direction: column;

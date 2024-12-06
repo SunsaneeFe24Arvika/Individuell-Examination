@@ -22,7 +22,7 @@
             </figure>
           
             <nav class="menu">
-                <a href="#" class="menu__link">
+                <a href="Hotel.html" class="menu__link">
                     <h3 class="menu__title">Hotelet</h3>
                 </a>    
                 <a href="#" class="menu__link">
@@ -57,19 +57,19 @@
              <fieldset>
                 <legend class="legend__form">Ansvarig för bokning</legend>
                 <form method="post">          
-                    <label for="name" class="form__label">Namn:</label>
-                    <input type="text" id="name" class="form__input" name="name" required placeholder="Ange ditt namn*">
+                    <label for="name" class="booking-form__label">Namn:</label>
+                    <input type="text" id="name" class="booking-form__input" name="name" required placeholder="Ange ditt namn*">
         
-                    <label for="email" class="form__label">E-post:</label>
-                    <input type="email" id="email" class="form__input" name="email" required placeholder="Ange din e-post*">
+                    <label for="email" class="booking-form__label">E-post:</label>
+                    <input type="email" id="email" class="booking-form__input" name="email" required placeholder="Ange din e-post*">
         
-                    <label for="checkin" class="form__label">Incheckningsdatum:</label>
-                    <input type="date" id="checkin" class="form__input" name="checkin" required>
+                    <label for="checkin" class="booking-form__label">Incheckningsdatum:</label>
+                    <input type="date" id="checkin" class="booking-form__input" name="checkin" required>
         
-                    <label for="checkout" class="form__label">Utcheckningsdatum:</label>
-                    <input type="date" id="checkout" class="form__input" name="checkout" required>
+                    <label for="checkout" class="booking-form__label">Utcheckningsdatum:</label>
+                    <input type="date" id="checkout" class="booking-form__input" name="checkout" required>
         
-                    <label for="room" class="form__label">Rumstyp:</label>
+                    <label for="room" class="booking-form__label">Rumstyp:</label>
                     <select id="room" name="room">
                         <option value="single">Enkelrum</option>
                         <option value="double">Dubbelrum</option>
@@ -77,21 +77,20 @@
                         <option value="apartment">Familjelägenhet</option>
                         <option value="cottage">Familjestuga</option>
                     </select>
-                    <input type="checkbox" id="checkbox" name="company" class="form__input--short">
-                    <label for="checkbox" class="form__label--short">Jag är en företag kund</label>
+                
                 </form>
             </fieldset>
             
             <fieldset>
                 <legend class="legend__form">Fakturering</legend>
                 <form method="post">          
-                    <p class="form__label">Adress:</p>
-                    <input type="text" class="form__input" name="name" placeholder="C/O adress till val" aria-label="C/O adress till val">
-                    <input type="text" class="form__input" name="road" placeholder="Gatuadress" aria-label="Gatuadress">
-                    <input type="text" class="form__input" name="city" placeholder="Stad" aria-label="Stad">
-                    <input type="text" class="form__input" name="postcode" placeholder="Postnummer" aria-label="Postnummer">
-                    <input type="text" class="form__input" name="land" placeholder="Land" aria-label="Land">
-                    <input type="text" class="form__input" name="telephone" placeholder="Telefonnummer*" aria-label="Telefonnummer">
+                    <p class="booking-form__label">Adress:</p>
+                    <input type="text" class="booking-form__input" name="name" placeholder="C/O adress till val" aria-label="C/O adress till val">
+                    <input type="text" class="booking-form__input" name="road" placeholder="Gatuadress" aria-label="Gatuadress">
+                    <input type="text" class="booking-form__input" name="city" placeholder="Stad" aria-label="Stad">
+                    <input type="text" class="booking-form__input" name="postcode" placeholder="Postnummer" aria-label="Postnummer">
+                    <input type="text" class="booking-form__input" name="land" placeholder="Land" aria-label="Land">
+                    <input type="text" class="booking-form__input" name="telephone" placeholder="Telefonnummer*" aria-label="Telefonnummer">
 
                 </form>
             </fieldset>
@@ -99,7 +98,7 @@
             <fieldset>
                 <legend class="legend__form">Speciella önskemål</legend>
                 <form method="post">
-                    <label for="form__comment" class="form__label">Skriv in ditt önskemål:</label>
+                    <label for="form__comment" class="booking-form__label">Skriv in ditt önskemål:</label>
                     <textarea name="comment" id="form__comment" cols="70" rows="5" aria-label="Skriv in ditt önskemål"></textarea>
        
                 </form>  
@@ -107,13 +106,12 @@
 
             <fieldset>
                     <legend class="legend__form">Betalningsmetod</legend>
-                    <select name="payment" aria-label="betalningsmetod">
+                    <select name="payment" id="payment" aria-label="betalningsmetod">
                         <option value="creditcard">Välj betalning...</option>
                         <option value="creditcard">Kreditkort</option>
                         <option value="paypal">PayPal</option>
                         <option value="swish">Swish</option>
                         <option value="klarna">Klarna</option>
-                        <option value="faktura">Faktura för företag</option>
                     </select>   
             </fieldset>
             <form class="betalning-btn__button--center">
