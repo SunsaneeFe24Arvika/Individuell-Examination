@@ -52,36 +52,25 @@
 
         <main class="container">
             
-            <section class="container__form">
-                <form>
-                    <label for="form-options__type" class="form__label">Välj en rumstyp:</label>
-                    <select id="form-options__type" name="form__option">
-                        <option value="single-room">Enkelrum</option>
-                        <option value="dubble-room">Superior tvåbäddsrum</option>
-                        <option value="deluxe">Deluxe-rum</option>
-                        <option value="juniorsvit">Juniorsvit- 1 dubbelsäng</option>
-                        <option value="apartment">Familjelägenhet - flera sängar</option>
-                        <option value="cottage">Familjestuga - upp till 10 sovplats</option>
-                    </select>
-
-                    <label for="date-in" class="form__label">Check-In:</label>
+            <section class="container__form"></section>
+                    <fieldset>
+                    <label for="date-in" class="form__label">Ankomsdatum:</label>
                     <input type="date" id="date-in" class="form__input">
 
-                    <label for="date-out" class="form__label">Check Out:</label>
-                    <input type="date" id="date-out" class="form__input">
-
-                    <label for="form-options__quantity" class="form__label">Gäster:</label>
-                    <select id="form-options__quantity" name="room-quantity">
+                    <label for="form-options__quantity" class="form__label">Antal gäster:</label>
+                    <select class="form-options__quantity" name="room-quantity">
                         <option value="dubble">1 rum, 2 gäster</option>
                         <option value="family">1 rum, 4 gäster</option>
                         <option value="single">1 rum, 1 gäst</option>
                     </select>
                 
                    <button class="submit-btn__button submit-btn__button--small search__button-media-query">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Sök
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Sök
                     </button>
-                </form>     
+
+                </fieldset>
+         
             </section>
             
             <h1 class="header__title-first header__title-first--larg heading__title-first--tranform header__title__media-query">VÄLKOMMEN TILL BONZ!</h1>
