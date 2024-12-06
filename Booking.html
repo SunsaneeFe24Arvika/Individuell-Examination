@@ -49,8 +49,8 @@
         </header>
 
         <main class="booking-header__title">
-            <h1 class="header__title-first header__title-first__padding-top">Dina uppgifter och betalning</h1>
-            <h3 class="heading__title-third heading__title-third--center">Du är nästan klar med din bokning hos oss på Bonz.ai</h3>
+            <h1 class="header__title-first header__title-first__padding-top">DINA UPPGIFTER & BETALNING</h1>
+            <h2 class="heading__title-second heading__title-second--center">Du är nästan klar med din bokning hos oss på Bonz.ai</h2>
             
             
         <section class="booking-container">
@@ -77,7 +77,7 @@
                         <option value="apartment">Familjelägenhet</option>
                         <option value="cottage">Familjestuga</option>
                     </select>
-                    <input type="checkbox" id="checkbox" name="company" class="form__input--short" id="customer-company">
+                    <input type="checkbox" id="checkbox" name="company" class="form__input--short">
                     <label for="checkbox" class="form__label--short">Jag är en företag kund</label>
                 </form>
             </fieldset>
@@ -85,13 +85,13 @@
             <fieldset>
                 <legend class="legend__form">Fakturering</legend>
                 <form method="post">          
-                    <label for="adress" class="form__label">Adress:</label>
-                    <input type="text" id="adress" class="form__input" name="name" placeholder="C/O adress till val">
-                    <input type="text" id="adress" class="form__input" name="road" placeholder="Gatuadress">
-                    <input type="text" id="adress" class="form__input" name="road" placeholder="Stad">
-                    <input type="text" id="adress" class="form__input" name="road" placeholder="Postnummer">
-                    <input type="text" id="adress" class="form__input" name="road" placeholder="Land">
-                    <input type="text" id="adress" class="form__input" name="road" placeholder="Telefonnummer*">
+                    <p class="form__label">Adress:</p>
+                    <input type="text" class="form__input" name="name" placeholder="C/O adress till val" aria-label="C/O adress till val">
+                    <input type="text" class="form__input" name="road" placeholder="Gatuadress" aria-label="Gatuadress">
+                    <input type="text" class="form__input" name="city" placeholder="Stad" aria-label="Stad">
+                    <input type="text" class="form__input" name="postcode" placeholder="Postnummer" aria-label="Postnummer">
+                    <input type="text" class="form__input" name="land" placeholder="Land" aria-label="Land">
+                    <input type="text" class="form__input" name="telephone" placeholder="Telefonnummer*" aria-label="Telefonnummer">
 
                 </form>
             </fieldset>
@@ -100,14 +100,14 @@
                 <legend class="legend__form">Speciella önskemål</legend>
                 <form method="post">
                     <label for="form__comment" class="form__label">Skriv in ditt önskemål:</label>
-                    <textarea name="comment" id="form__comment" cols="70" rows="5"></textarea>
+                    <textarea name="comment" id="form__comment" cols="70" rows="5" aria-label="Skriv in ditt önskemål"></textarea>
        
                 </form>  
             </fieldset>
 
             <fieldset>
                     <legend class="legend__form">Betalningsmetod</legend>
-                    <select id="form__comment" name="payment">
+                    <select name="payment" aria-label="betalningsmetod">
                         <option value="creditcard">Välj betalning...</option>
                         <option value="creditcard">Kreditkort</option>
                         <option value="paypal">PayPal</option>
@@ -116,7 +116,7 @@
                         <option value="faktura">Faktura för företag</option>
                     </select>   
             </fieldset>
-            <form>
+            <form class="betalning-btn__button--center">
                 <button class="submit-btn__button submit-btn__button--center" type="submit">BOKA & BETALA</button>
             </form>
         </section>

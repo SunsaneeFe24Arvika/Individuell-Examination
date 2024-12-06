@@ -675,6 +675,11 @@ hr {
 }*/
    
 }
+.facility__description__flex--larg {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
 .description {
     text-align: left;
     margin: 1rem 0;
@@ -692,13 +697,13 @@ hr {
 }
 
 
-/*ROOM INFOMATION SECTION*/
+/*ROOM INFOMATION SECTION
 .room-container {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     
-}
+}*/
 
 .room-info__flex-box {
     margin: 0 3rem;
@@ -963,6 +968,16 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
         align-self: flex-end;
         margin-top: 1rem;
     }
+    .betalning-btn__button--center {
+        margin:  1rem 0;
+        transform: translateX(35%);
+    }
+    .search-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
 
 /*END BUTTONS*/
     
@@ -1062,7 +1077,6 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
    /*ABOUT HOTEL*/
 
    .header__image {
-    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1079,39 +1093,37 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
    }
    .room-btn__button {
     flex-direction: column;
-    align-items: center;
+    align-items: last baseline;
     gap: 1rem;
-   }
-   .room__article {
-        width: 80%;
 
    }
+   
    .room-container__grid {
-    width: 80%;
-
-   .room__article img {
-        width: 300px;
-    }
+    padding: 50px 10px;
    }
-
-
+  
    
-   
-
-   /*HOTEL FACILITY SECTION*/
+   /*HOTEL FACILITY SECTION in ABOUT HOTEL*/
    .aside__facility__grid {
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
    }
-   .aside__article--small img {
-    max-width: 375px;
-    padding: 10px;
+   .aside__article{
+    display: flex;
+    padding: 1rem;
    }
+   .facility__description__flex {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 
+    .info-btn__submit-btn {
+        align-self: end;
+    }
+   }
 
 
 /*SEARCH PAGE*/
@@ -1128,33 +1140,32 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
     margin: 0;
     padding: 0;
 
-    .search__form, .search__form--fixed {
-        position: static;
-        margin: 0;
-        padding: 0 10px;
+    .search__form {
+        margin-left: 0;
+    
     }
     
 }
-.room-container__grid, .search-room__grid {
+
+.room-container__grid, .search-room__grid, .results-room__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
- .room-info__flex-box {
-    width: 355px;
     margin: 0;
+}
+.room-info__flex-box {
 
-    img {
-        width: 355px;
-        aspect-ratio: 5 / 3;
+    img{
+        padding: 0 1rem;
+    }
+    .room__heading-title {
+        font-size: 16px;
     }
     
 }
-.search-btn {
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-}
+
+ 
+
 
 /*SEARCH RESULTS FOR ROOM*/
 .results-container {
@@ -1171,5 +1182,8 @@ ADAPTING TO MOBILE AND SMALLER DEVICES*/
     flex-direction: column;
     align-items: center;
 }
-
+.results__flex-box {
+    margin: 0;
+    margin-bottom: 3rem;
+}
 }
