@@ -42,7 +42,7 @@
                     </h3>
                 </a>
                 <a href="#" class="menu__ham">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" aria-label="meny"></i>
                 </a>
             </nav>
           
@@ -50,27 +50,38 @@
 
          <!--SEARCH CONTAINER-->
 
-        <main class="container">
+         <main class="container">
             
             <section class="container__form">
-                    <form>
-                    <label for="date-in" class="form__label__first">Ankomsdatum:</label>
-                    <input type="date" id="date-in" class="form__input__first">
+                <form>
+                    <label for="form-options__type" class="form__label">Välj en rumstyp:</label>
+                    <select id="form-options__type" name="form__option">
+                        <option value="single-room">Enkelrum</option>
+                        <option value="dubble-room">Superior tvåbäddsrum</option>
+                        <option value="deluxe">Deluxe-rum</option>
+                        <option value="juniorsvit">Juniorsvit- 1 dubbelsäng</option>
+                        <option value="apartment">Familjelägenhet - flera sängar</option>
+                        <option value="cottage">Familjestuga - upp till 10 sovplats</option>
+                    </select>
 
-                    <label for="form-options__quantity" class="form__label__first">Antal gäster:</label>
-                    <select class="form-options__quantity" id="form-options__quantity" name="room-quantity">
+                    <label for="check-in" class="form__label">Check-In:</label>
+                    <input type="date" id="check-in" class="form__input" aria-label="Check-in">
+
+                    <label for="check-out" class="form__label">Check Out:</label>
+                    <input type="date" id="check-out" class="form__input" aria-label="check-out">
+
+                    <label for="form-options__quantity" class="form__label">Gäster:</label>
+                    <select id="form-options__quantity" name="room-quantity">
                         <option value="dubble">1 rum, 2 gäster</option>
                         <option value="family">1 rum, 4 gäster</option>
                         <option value="single">1 rum, 1 gäst</option>
                     </select>
                 
-                   <button class="submit-btn__button submit-btn__button--small search__button-media-query">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Sök
+                   <button class="submit-btn__button submit-btn__button--small">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Sök
                     </button>
-
-                    </form>
-         
+                </form>     
             </section>
             
             <h1 class="header__title-first header__title-first--larg heading__title-first--tranform header__title__media-query">VÄLKOMMEN TILL BONZ!</h1>
