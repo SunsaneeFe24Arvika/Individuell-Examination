@@ -440,13 +440,14 @@ hr {
     word-spacing: 10px;
     border: none;
     border-radius: 5px;
-    background-color: var(--primary-submit-button);
+    background-color: var(--primary-hover-color);
+    color: var(--secondary-fonts-color);
     
 }   
 
 .form-btn__submit-button:hover {
-    background-color: var(--primary-hover-color);
-    color: var(--secondary-fonts-color);
+    background-color: var(--primary-submit-button);
+    color: var(--primary-fonts-color);
 }
 .submit-btn {
     display: flex;
@@ -479,7 +480,7 @@ hr {
 }
 .submit-btn__button--small {
     font-size: 12px;
-    margin: 0;
+    margin: 0 1.5rem;
 }
 .submit-btn__button--center{
     display: flex;
@@ -651,6 +652,9 @@ hr {
 .search__form i { 
     margin-right: 20px;
 
+}
+.search__form a {
+    padding-top: 3rem;
 }
 .facility__description__flex--larg {
     width: 750px;
